@@ -1,24 +1,23 @@
 :root {
-    /* === PALETA DE COLORES (Empresa) === */
+    /* === NUEVA PALETA DE COLORES === */
     
-    /* 1. Color Principal (Botones, Iconos) -> Salmón */
-    --c-brand-primary: #e38361; 
+    /* 1. Color Principal (Botones, Iconos) -> CORAL */
+    --c-brand-primary: #FE8050; 
     
-    /* 2. Color Secundario (Títulos oscuros) -> Turquesa Fuerte */
-    --c-brand-dark-accent: #01a3bd;
+    /* 2. Color Secundario (Títulos secciones) -> TURQUESA */
+    --c-brand-dark-accent: #14A7CA;
     
-    /* 3. Color de FONDO DE LA TARJETA -> Azul Cielo Pálido */
-    /* Este es el que pediste para reemplazar el blanco de fondo */
+    /* 3. Color de FONDO (Fijo) -> AZUL PÁLIDO */
     --c-bg-card: #bbe0e4; 
     
-    /* 4. Color de Resalte (Caja de Saldo) -> Dorado */
-    --c-brand-yellow: #e8c257;
+    /* 4. Color de Resalte (Saldo Restante) -> AMARILLO BRILLANTE */
+    --c-brand-yellow: #FFC300;
 
     /* Colores Neutros */
-    --c-dark-blue: #293241; 
+    --c-dark-blue: #293241; /* Texto oscuro */
     --c-dark: #1d1d1f;      
     --c-gray: #5f5f63;      
-    --c-light-gray: #f4f6f8; /* Fondo de afuera */
+    --c-light-gray: #f4f6f8; /* Fondo exterior */
     --c-white: #ffffff;
 }
 
@@ -26,30 +25,30 @@
 
 body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background-color: var(--c-light-gray); color: var(--c-dark); -webkit-font-smoothing: antialiased; }
 
-/* Wrapper: AHORA TIENE EL FONDO AZUL PÁLIDO (#bbe0e4) */
+/* Wrapper: FONDO AZUL PÁLIDO (#bbe0e4) */
 .wrapper { 
     max-width: 800px; 
     margin: 40px auto; 
-    background-color: var(--c-bg-card); /* <--- AQUÍ ESTÁ EL CAMBIO */
+    background-color: var(--c-bg-card); 
     box-shadow: 0 20px 70px rgba(0,0,0,0.1); 
     border-radius: 24px; 
     overflow: hidden; 
 }
 
-/* Header: También toma el color azul pálido para integrarse */
+/* Header: FONDO AZUL PÁLIDO (#bbe0e4) */
 .header { 
-    background-color: var(--c-bg-card); /* <--- AQUÍ ESTÁ EL CAMBIO */
+    background-color: var(--c-bg-card); 
     padding: 30px; 
     text-align: center; 
     border-bottom: 1px solid rgba(0,0,0,0.05); 
 }
-.header img { max-width: 400px; height: auto; }
+.header img { max-width: 350px; height: auto; }
 
 /* Secciones */
 .section { padding: 40px; text-align: center; }
 h1, h2, h3 { font-weight: 700; line-height: 1.2; }
 h1 { font-size: 40px; margin-bottom: 10px; color: var(--c-dark-blue); }
-.intro-text { font-size: 18px; color: var(--c-dark-blue); opacity: 0.8; max-width: 600px; margin: 0 auto; } /* Texto un poco más oscuro para leerse bien sobre el azul */
+.intro-text { font-size: 18px; color: var(--c-dark-blue); opacity: 0.8; max-width: 600px; margin: 0 auto; }
 
 /* === FORMULARIOS === */
 #form-section { padding-top: 0; }
@@ -59,40 +58,41 @@ form { margin-top: 30px; text-align: left; }
 .form-group.full-width { grid-column: 1 / -1; }
 .form-group label { font-weight: 600; font-size: 14px; margin-bottom: 8px; color: var(--c-dark-blue); }
 
-/* Inputs: BLANCOS para resaltar sobre el fondo azul */
+/* Inputs: BLANCOS */
 .form-group input, .form-group textarea, .form-group select { 
     width: 100%; 
     padding: 12px 15px; 
     border-radius: 8px; 
-    border: 1px solid transparent; /* Sin borde inicial para look más limpio */
-    background-color: var(--c-white); /* <--- IMPORTANTE: Fondo blanco */
+    border: 1px solid transparent; 
+    background-color: var(--c-white); 
     font-family: 'Poppins', sans-serif; 
     font-size: 16px; 
     box-sizing: border-box; 
     transition: all 0.2s; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.03);
 }
-.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--c-brand-primary); box-shadow: 0 0 0 3px rgba(227, 131, 97, 0.2); }
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--c-brand-primary); box-shadow: 0 0 0 3px rgba(254, 128, 80, 0.2); }
 
 .currency-group { display: flex; gap: 10px; }
 .currency-group input { flex-grow: 1; }
 .currency-group select { width: 100px; }
 
-/* Botones: Color Salmón (#e38361) */
-.submit-button { display: inline-block; width: 100%; background-color: var(--c-brand-primary); color: var(--c-white); padding: 16px; border-radius: 12px; font-size: 18px; font-weight: 700; border: none; cursor: pointer; margin-top: 30px; transition: background-color 0.2s; box-shadow: 0 4px 15px rgba(227, 131, 97, 0.4); }
-.submit-button:hover { background-color: #c96b4d; transform: translateY(-1px); }
+/* Botones: CORAL (#FE8050) */
+.submit-button { display: inline-block; width: 100%; background-color: var(--c-brand-primary); color: var(--c-white); padding: 16px; border-radius: 12px; font-size: 18px; font-weight: 700; border: none; cursor: pointer; margin-top: 30px; transition: background-color 0.2s; box-shadow: 0 4px 15px rgba(254, 128, 80, 0.4); }
+.submit-button:hover { background-color: #e56b3e; transform: translateY(-1px); }
 
 /* === VOUCHER / CONFIRMACIÓN === */
 #confirmation-section { display: none; padding-bottom: 40px; }
-.confirmation-header { background-image: url('https://i.imgur.com/7Izn0Vp.png'); background-size: cover; background-position: center; padding: 30px; text-align: center; border-radius: 0; } /* Header del PDF mantiene imagen */
-.confirmation-header img { max-width: 350px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); }
+/* El header de confirmación usa el color de fondo para integrar el logo */
+.confirmation-header { background-color: var(--c-bg-card); padding: 30px; text-align: center; } 
+.confirmation-header img { max-width: 300px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); }
 .voucher-content { padding: 30px; text-align: center; }
 .confirmation-title-image { display: block; margin: 0 auto 25px auto; max-width: 534px; width: 100%; height: auto; }
 
-/* Cajas internas del voucher: MANTENEMOS BLANCO EL CONTENIDO para que parezca papel */
+/* Cajas internas del voucher: BLANCO */
 .voucher-body, .adicionales-box, .garantia-box { background-color: var(--c-white); }
 
-/* Contenedores generales del voucher */
+/* Contenedores generales */
 .voucher, .info-box, .saldo-box, .adicionales-box, .garantia-box { 
     border: 1px solid rgba(0,0,0,0.05); 
     border-radius: 16px; 
@@ -102,7 +102,7 @@ form { margin-top: 30px; text-align: left; }
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* Título del Voucher: Color Turquesa Fuerte (#01a3bd) */
+/* Título del Voucher: TURQUESA (#14A7CA) */
 .voucher-title { background-color: var(--c-brand-dark-accent); color: var(--c-white); padding: 20px 25px; }
 .voucher-title h2 { font-size: 22px; color: var(--c-white); margin: 0; font-weight: 700; letter-spacing: 0.5px; }
 
@@ -113,13 +113,14 @@ form { margin-top: 30px; text-align: left; }
 .data-item { display: flex; align-items: flex-start; gap: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
 .data-item:last-child, .data-item.no-border { border-bottom: none; }
 .data-item.full-width { grid-column: 1 / -1; }
-.data-item svg { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; color: var(--c-brand-primary); } /* Iconos Salmón */
+.data-item svg { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; color: var(--c-brand-primary); } /* Iconos Coral */
 .data-item-content strong { display: block; font-size: 14px; color: var(--c-gray); margin-bottom: 5px; text-transform: uppercase; }
 .data-item-content p { font-size: 16px; font-weight: 600; margin: 0; white-space: pre-wrap; word-wrap: break-word; }
 
-/* Caja de Saldo: Dorado (#e8c257) */
-.saldo-box { background-color: var(--c-brand-yellow); border: 1px solid #d4b04c; padding: 25px; text-align: center; color: var(--c-dark-blue); }
-.saldo-box strong { font-size: 18px; color: #5e4d10; font-weight: 700; margin:0; text-transform: uppercase; letter-spacing: 1px; }
+/* Caja de Saldo: AMARILLO (#FFC300) */
+/* Nota: Usamos texto oscuro porque el amarillo es muy brillante */
+.saldo-box { background-color: var(--c-brand-yellow); border: 1px solid #e0ac00; padding: 25px; text-align: center; color: var(--c-dark-blue); }
+.saldo-box strong { font-size: 18px; color: #5c4000; font-weight: 700; margin:0; text-transform: uppercase; letter-spacing: 1px; }
 .saldo-box p { font-size: 36px; font-weight: 900; color: var(--c-dark); margin: 5px 0 0 0; }
 
 /* Caja de Garantía */
@@ -145,19 +146,19 @@ form { margin-top: 30px; text-align: left; }
 .adicional-banner-content h4 { font-size: 26px; font-weight: 900; margin: 0 0 4px 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
 .adicional-banner-content p { font-size: 16px; margin: 0 0 15px 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
 .adicional-banner-cta { display: inline-flex; align-items: center; gap: 10px; background-color: var(--c-brand-primary); color: var(--c-white); padding: 12px 22px; border-radius: 50px; font-weight: 700; transition: transform 0.2s ease, background-color 0.2s ease; }
-.adicional-banner:hover .adicional-banner-cta { transform: scale(1.05); background-color: #c96b4d; }
+.adicional-banner:hover .adicional-banner-cta { transform: scale(1.05); background-color: #e56b3e; }
 .adicional-banner-price { position: relative; z-index: 2; text-align: right; }
 .adicional-banner-price .price-label { font-size: 14px; font-weight: 600; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
 .adicional-banner-price .price-amount { font-size: 32px; font-weight: 900; line-height: 1; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
 
-/* Footer y Botones de Acción */
+/* Footer y Botones */
 .voucher-footer { padding-top: 20px; text-align: center; }
 .voucher-footer img { max-width: 100%; height: auto; }
 .action-buttons { margin-top: 40px; display: flex; gap: 15px; justify-content: center; padding: 0 20px; }
 .action-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 30px; border-radius: 12px; font-size: 18px; font-weight: 700; border: none; cursor: pointer; transition: background-color 0.2s, box-shadow 0.2s; flex-grow: 1; }
 .action-button.download { background-color: var(--c-brand-primary); color: var(--c-white); }
-.action-button.download:hover { background-color: #c96b4d; }
-.action-button.secondary { background-color: var(--c-white); color: var(--c-dark-blue); box-shadow: 0 2px 10px rgba(0,0,0,0.05); } /* Botón secundario blanco */
+.action-button.download:hover { background-color: #e56b3e; }
+.action-button.secondary { background-color: var(--c-white); color: var(--c-dark-blue); box-shadow: 0 2px 10px rgba(0,0,0,0.05); } 
 .action-button.secondary:hover { background-color: #f0f2f5; }
 
 /* Loader */
@@ -167,16 +168,16 @@ form { margin-top: 30px; text-align: left; }
 
 /* Login */
 #login-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--c-light-gray); display: flex; justify-content: center; align-items: center; z-index: 2000; }
-#login-box { background-color: var(--c-bg-card); /* Caja login también toma el azul */ padding: 40px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 90%; }
+#login-box { background-color: var(--c-bg-card); padding: 40px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 90%; }
 .login-logo { max-width: 250px; margin-bottom: 20px; }
 #login-box h2 { font-size: 24px; color: var(--c-dark-blue); margin-bottom: 10px; }
 #login-box p { color: var(--c-dark-blue); margin-bottom: 25px; opacity: 0.8; }
 #login-form input { width: 100%; padding: 14px; border-radius: 8px; border: 1px solid transparent; background-color: var(--c-white); font-family: 'Poppins', sans-serif; font-size: 16px; box-sizing: border-box; text-align: center; }
 #login-form input:focus { border-color: var(--c-brand-primary); }
 #login-form button { width: 100%; background-color: var(--c-brand-primary); color: var(--c-white); padding: 14px; border-radius: 8px; font-size: 16px; font-weight: 700; border: none; cursor: pointer; margin-top: 15px; transition: background-color 0.2s; }
-#login-form button:hover { background-color: #c96b4d; }
+#login-form button:hover { background-color: #e56b3e; }
 
-/* Autocompletar Google Maps */
+/* Autocompletar */
 .pac-container { z-index: 1050 !important; font-family: 'Poppins', sans-serif; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #ddd; }
 .pac-item { padding: 10px 15px; font-size: 15px; cursor: pointer; border-top: 1px solid #f0f0f0; }
 .pac-item:first-child { border-top: none; }
