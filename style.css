@@ -1,7 +1,7 @@
 :root {
     /* === NUEVA PALETA DE COLORES === */
     
-    /* 1. Color Principal (Botones, Iconos) -> CORAL */
+    /* 1. Color Principal (Botones, Iconos, Enlaces) -> CORAL */
     --c-brand-primary: #FE8050; 
     
     /* 2. Color Secundario (Títulos secciones) -> TURQUESA */
@@ -14,15 +14,14 @@
     --c-brand-yellow: #FFC300;
 
     /* Colores Neutros */
-    --c-dark-blue: #293241; /* Texto oscuro */
+    --c-dark-blue: #293241; 
     --c-dark: #1d1d1f;      
     --c-gray: #5f5f63;      
-    --c-light-gray: #f4f6f8; /* Fondo exterior */
+    --c-light-gray: #f4f6f8; 
     --c-white: #ffffff;
 }
 
 /* === ESTILOS GENERALES === */
-
 body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background-color: var(--c-light-gray); color: var(--c-dark); -webkit-font-smoothing: antialiased; }
 
 /* Wrapper: FONDO AZUL PÁLIDO (#bbe0e4) */
@@ -35,7 +34,7 @@ body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background-col
     overflow: hidden; 
 }
 
-/* Header: FONDO AZUL PÁLIDO (#bbe0e4) */
+/* Header: FONDO AZUL PÁLIDO */
 .header { 
     background-color: var(--c-bg-card); 
     padding: 30px; 
@@ -83,13 +82,15 @@ form { margin-top: 30px; text-align: left; }
 
 /* === VOUCHER / CONFIRMACIÓN === */
 #confirmation-section { display: none; padding-bottom: 40px; }
-/* El header de confirmación usa el color de fondo para integrar el logo */
+
+/* Header Confirmación con Logo Nuevo */
 .confirmation-header { background-color: var(--c-bg-card); padding: 30px; text-align: center; } 
 .confirmation-header img { max-width: 300px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); }
+
 .voucher-content { padding: 30px; text-align: center; }
 .confirmation-title-image { display: block; margin: 0 auto 25px auto; max-width: 534px; width: 100%; height: auto; }
 
-/* Cajas internas del voucher: BLANCO */
+/* Cajas internas: BLANCO */
 .voucher-body, .adicionales-box, .garantia-box { background-color: var(--c-white); }
 
 /* Contenedores generales */
@@ -118,7 +119,6 @@ form { margin-top: 30px; text-align: left; }
 .data-item-content p { font-size: 16px; font-weight: 600; margin: 0; white-space: pre-wrap; word-wrap: break-word; }
 
 /* Caja de Saldo: AMARILLO (#FFC300) */
-/* Nota: Usamos texto oscuro porque el amarillo es muy brillante */
 .saldo-box { background-color: var(--c-brand-yellow); border: 1px solid #e0ac00; padding: 25px; text-align: center; color: var(--c-dark-blue); }
 .saldo-box strong { font-size: 18px; color: #5c4000; font-weight: 700; margin:0; text-transform: uppercase; letter-spacing: 1px; }
 .saldo-box p { font-size: 36px; font-weight: 900; color: var(--c-dark); margin: 5px 0 0 0; }
