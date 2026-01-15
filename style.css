@@ -1,62 +1,63 @@
 :root {
-    /* === PALETA DE COLORES NUEVA === */
+    /* === PALETA DE COLORES NUEVA (ACTUALIZADA) === */
     
     /* Color Principal (Botones, Iconos, Enlaces) -> Salmón */
     --c-brand-primary: #e38361; 
     
-    /* Color Secundario (Fondos de Títulos, Decoración) -> Azul Cielo */
-    --c-brand-light: #bbe0e4;
+    /* Color Secundario (Fondos de Títulos, Decoración) -> TU NUEVO AZUL TURQUESA */
+    --c-brand-light: #01a3bd;
     
     /* Color de Resalte (Caja de Saldo) -> Dorado */
     --c-brand-accent: #e8c257;
 
-    /* Colores Neutros (Textos y Fondos) - Se mantienen para legibilidad */
-    --c-dark-blue: #293241; /* Texto oscuro */
-    --c-dark: #1d1d1f;      /* Texto principal */
-    --c-gray: #5f5f63;      /* Texto secundario */
-    --c-light-gray: #f8f9fa; /* Fondo de la página (un poco más limpio) */
-    --c-mid-gray: #e9ecef;  /* Bordes */
+    /* Colores Neutros */
+    --c-dark-blue: #293241; 
+    --c-dark: #1d1d1f;      
+    --c-gray: #5f5f63;      
+    --c-light-gray: #f8f9fa; 
+    --c-mid-gray: #e9ecef;  
     --c-white: #ffffff;
 }
 
-/* === APLICACIÓN DE COLORES (No toques nada abajo, esto reasigna todo) === */
+/* === ESTILOS GENERALES === */
 
 body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background-color: var(--c-light-gray); color: var(--c-dark); -webkit-font-smoothing: antialiased; }
 .wrapper { max-width: 800px; margin: 40px auto; background-color: var(--c-white); box-shadow: 0 20px 70px rgba(0,0,0,0.08); border-radius: 24px; overflow: hidden; }
 
-/* Spinner de carga con los nuevos colores */
-.spinner { border: 8px solid var(--c-brand-light); border-top: 8px solid var(--c-brand-primary); border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite; margin-bottom: 20px; }
+/* Spinner de carga */
+.spinner { border: 8px solid #f3f3f3; border-top: 8px solid var(--c-brand-light); border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite; margin-bottom: 20px; }
 
-/* Formularios: Foco en el color Salmón */
+/* Formularios */
 .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--c-brand-primary); box-shadow: 0 0 0 3px rgba(227, 131, 97, 0.2); }
 
-/* Botones: Color Salmón */
+/* Botones */
 .submit-button { background-color: var(--c-brand-primary); color: var(--c-white); }
-.submit-button:hover { background-color: #c96b4d; /* Un poco más oscuro al pasar el mouse */ }
+.submit-button:hover { background-color: #c96b4d; }
 .action-button.download { background-color: var(--c-brand-primary); color: var(--c-white); }
 .action-button.download:hover { background-color: #c96b4d; }
 
-/* Iconos SVG: Color Salmón */
+/* Iconos SVG: Ahora usan el azul fuerte (#01a3bd) o el salmón según prefieras. 
+   He dejado SALMÓN para mantener jerarquía, pero si quieres azul avísame. */
 .data-item svg, .info-item svg { color: var(--c-brand-primary); }
 
-/* === CAMBIOS EN EL VOUCHER (Aquí usamos el Azul y el Dorado) === */
+/* === CAMBIOS EN EL VOUCHER === */
 
-/* Títulos del Voucher (Fondo Azul Cielo #bbe0e4) */
-/* NOTA: Cambiamos el texto a oscuro para que se lea bien sobre el azul claro */
-.voucher-title { background-color: var(--c-brand-light); color: var(--c-dark-blue); padding: 20px 25px; border-bottom: 1px solid rgba(0,0,0,0.05); }
-.voucher-title h2 { font-size: 22px; color: var(--c-dark-blue); margin: 0; font-weight: 800; letter-spacing: -0.5px; }
+/* Títulos del Voucher (Fondo #01a3bd) */
+/* AJUSTE IMPORTANTE: Como el azul es oscuro, puse la letra BLANCA */
+.voucher-title { background-color: var(--c-brand-light); color: var(--c-white); padding: 20px 25px; }
+.voucher-title h2 { font-size: 22px; color: var(--c-white); margin: 0; font-weight: 700; letter-spacing: 0.5px; }
 
 /* Caja de Saldo (Fondo Dorado #e8c257) */
 .saldo-box { background-color: var(--c-brand-accent); border: 1px solid #d4b04c; padding: 25px; text-align: center; color: var(--c-dark-blue); }
 .saldo-box strong { font-size: 18px; color: #5e4d10; font-weight: 700; margin:0; text-transform: uppercase; letter-spacing: 1px; }
 .saldo-box p { font-size: 36px; font-weight: 900; color: var(--c-dark); margin: 5px 0 0 0; }
 
-/* Banners Adicionales (Botones dentro de los banners) */
+/* Banners Adicionales */
 .adicional-banner-cta { background-color: var(--c-brand-primary); color: var(--c-white); }
 .adicional-banner:hover .adicional-banner-cta { background-color: #c96b4d; }
 
-/* Resto de estilos base (sin cambios de estructura) */
-#loader-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.9); display: none; justify-content: center; align-items: center; z-index: 1000; flex-direction: column; color: var(--c-dark-blue); font-weight: 600; }
+/* Resto de estilos funcionales */
+#loader-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.95); display: none; justify-content: center; align-items: center; z-index: 1000; flex-direction: column; color: var(--c-brand-light); font-weight: 700; }
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 .header { background-color: var(--c-white); padding: 30px; text-align: center; border-bottom: 1px solid #dee2e6; }
 .header img { max-width: 400px; height: auto; }
@@ -122,7 +123,9 @@ form { margin-top: 30px; text-align: left; }
 .pac-container { z-index: 1050 !important; font-family: 'Poppins', sans-serif; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #ddd;}
 .pac-item { padding: 10px 15px; font-size: 15px; cursor: pointer; border-top: 1px solid #f0f0f0; }
 .pac-item:first-child { border-top: none; }
-.pac-item:hover { background-color: var(--c-brand-light); } /* Hover en autocompletar también usa el azul nuevo */
+/* Hover en el autocompletar ahora usa el azul nuevo y texto blanco para contraste */
+.pac-item:hover { background-color: var(--c-brand-light); color: var(--c-white); } 
+.pac-item:hover .pac-item-query { color: var(--c-white); }
 .pac-item-query { font-weight: 600; color: var(--c-dark); }
 @media (max-width: 768px) {
     .wrapper { margin: 0; border-radius: 0; }
