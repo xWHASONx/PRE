@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Comprobantes - Let's Go Travel</title>
+    <title>Generador de Comprobantes - Vivantura</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -22,8 +22,8 @@
 
     <div id="login-overlay">
     <div id="login-box">
-        <!-- LOGO ACTUALIZADO AQUÍ -->
-        <img src="https://i.imgur.com/GiTvvrW.png" alt="Let's Go Travel" class="login-logo">
+        <!-- LOGO DEL LOGIN (SE MANTIENE EL ANTERIOR) -->
+        <img src="https://i.imgur.com/GiTvvrW.png" alt="Logo Login" class="login-logo">
         <h2>Acceso Restringido</h2>
         <p>Por favor, introduce la contraseña para continuar.</p>
         <form id="login-form">
@@ -41,8 +41,8 @@
 
     <div class="wrapper">
         <section class="section" id="form-title-section">
-            <!-- LOGO ACTUALIZADO AQUÍ -->
-            <header class="header"><img src="https://i.imgur.com/GiTvvrW.png" alt="Let's Go Travel"></header>
+            <!-- LOGO DEL FORMULARIO (SE MANTIENE EL ANTERIOR) -->
+            <header class="header"><img src="https://i.imgur.com/GiTvvrW.png" alt="Logo Formulario"></header>
             <h1 style="margin-top: 30px;">Generador de Comprobantes</h1>
             <p class="intro-text">Completa la siguiente información para generar el comprobante de pre-reserva del cliente.</p>
         </section>
@@ -74,8 +74,11 @@
 
         <div id="confirmation-section">
             <div id="voucher-to-print">
-                <!-- LOGO ACTUALIZADO AQUÍ -->
-                <header class="confirmation-header"><img src="https://i.imgur.com/GiTvvrW.png" alt="Let's Go Travel Logo"></header>
+                <!-- ============================================== -->
+                <!-- AQUI ESTA EL CAMBIO DE LOGO PARA EL PDF -->
+                <!-- ============================================== -->
+                <header class="confirmation-header"><img src="https://i.imgur.com/UwQUg2M.png" alt="Viventura Logo"></header>
+                
                 <div class="voucher-content">
                     <img src="https://i.imgur.com/dyomJpx.png" alt="Pre-Reserva Confirmada" class="confirmation-title-image">
                     
@@ -103,7 +106,6 @@
                             <div class="data-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg><div class="data-item-content"><strong>Teléfono:</strong><p id="confirm-telefono"></p></div></div>
                             <div class="data-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg><div class="data-item-content"><strong>Correo Electrónico:</strong><p id="confirm-email"></p></div></div>
                             
-                            <!-- ===== ESPACIO PARA MOSTRAR LA DIRECCIÓN AÑADIDO ===== -->
                             <div class="data-item full-width"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2l-7 7-7-7M19 10v10a1 1 0 01-1 1h-3"></path></svg><div class="data-item-content"><strong>Dirección:</strong><p id="confirm-direccion">No especificada</p></div></div>
 
                             <div class="data-item full-width"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg><div class="data-item-content"><strong>Acompañantes:</strong><p id="confirm-acompanantes">No especificado</p></div></div>
@@ -173,8 +175,9 @@
                         <div class="voucher-title"><h2>Información Corporativa</h2></div>
                         <div class="voucher-body"><div class="data-grid">
                             <div class="data-item full-width"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg><div class="data-item-content"><strong>Dirección:</strong><p>CRA 35 #15 B 143, OFICINA 513, EDIFICIO 35 PALMS, Medellín, Antioquia, Colombia</p></div></div>
-                            <div class="data-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H4a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg><div class="data-item-content"><strong>NIT:</strong><p>901830599-9</p></div></div>
-                            <div class="data-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg><div class="data-item-content"><strong>RNT:</strong><p>209255</p></div></div>
+                            <!-- AQUI ESTAN LOS CAMBIOS DE NIT Y RNT -->
+                            <div class="data-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H4a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg><div class="data-item-content"><strong>NIT:</strong><p>901965026-0</p></div></div>
+                            <div class="data-item"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg><div class="data-item-content"><strong>RNT:</strong><p>255831</p></div></div>
                         </div></div>
                     </div>
 
@@ -186,7 +189,6 @@
                 </div>
             </div>
             <div class="action-buttons">
-                <!-- El ID del botón es importante -->
                 <button class="action-button download" id="process-voucher-btn">Enviar Comprobante por Correo</button>
                 <button class="action-button secondary" id="new-voucher-btn">Crear Nuevo Comprobante</button>
             </div>
